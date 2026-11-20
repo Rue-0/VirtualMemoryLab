@@ -1,0 +1,12 @@
+PID 1 Thread 1 Page 0 PAGE FAULT Frame 0
+PID 1 Thread 1 Page 0 TLB HIT Frame 0
+PID 1 Thread 2 Page 0 TLB HIT Frame 0
+PID 1 Thread 2 Page 0 TLB HIT Frame 0
+PID 2 Thread 1 Page 2 PAGE FAULT Frame 1
+PID 2 Thread 2 Page 2 TLB HIT Frame 1
+PID 2 Thread 1 Page 2 TLB HIT Frame 1
+PID 2 Thread 2 Page 2 TLB HIT Frame 1
+PID 3 Thread 1 Page 15 PAGE FAULT Frame 2
+PID 3 Thread 2 Page 1 PAGE FAULT Frame 3
+PID 3 Thread 1 Page 9 PAGE FAULT Frame 0
+PID 3 Thread 2 Page 3 PAGE FAULT Frame 2

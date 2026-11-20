@@ -1,0 +1,25 @@
+#ifndef TWO_LEVEL_PAGE_TABLE_H
+#define TWO_LEVEL_PAGE_TABLE_H
+
+#include <map>
+#include <set>
+#include <utility>
+
+class TwoLevelPageTable {
+private:
+    std::map<std::pair<int, int>, int> firstLevel;
+    std::map<std::pair<int, int>, int> secondLevel;
+    std::set<std::pair<int, int>> memoryPages;
+    int pageCount;
+
+public:
+    TwoLevelPageTable(int pageCount);
+
+    bool isInMemory(int pid, int pageNum) const;
+    int getFrame(int pid, int pageNum) const;
+    void loadPage(int pid, int pageNum, int frameNum);
+    void removePage(int pid, int pageNum);
+    void printStats() const;
+};
+
+#endif
